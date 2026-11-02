@@ -1,0 +1,68 @@
+/* Design tokens. A theme = a different set of these values. */
+:root {
+  --font-display: 'Fredoka', ui-rounded, 'SF Pro Rounded', system-ui, sans-serif;
+  --font-ui: 'Nunito', system-ui, -apple-system, sans-serif;
+
+  --cream: #fff6ea;
+  --paper: #fffdf8;
+  --ink: #3a2e2a;
+  --ink-soft: #7c6a62;
+  --line: #eadbc8;
+
+  --primary: #ff8a3d;
+  --primary-dark: #d9661c;
+  --primary-soft: #ffe3cf;
+  --good: #3cc48a;
+  --good-dark: #23996a;
+  --bad: #ff5c6c;
+  --bad-dark: #d63a4c;
+  --sticky: #ffe58a;
+
+  /* One candy color per agent role: desk, avatar ring, Kanban tape. */
+  --role-manager: #ff7b8a;
+  --role-manager-dark: #d9505f;
+  --role-researcher: #52b8ff;
+  --role-researcher-dark: #2a8fd6;
+  --role-writer: #ffc53d;
+  --role-writer-dark: #d99a12;
+  --role-coder: #3ccb9a;
+  --role-coder-dark: #1f9c72;
+  --role-designer: #a88bff;
+  --role-designer-dark: #7d5fe0;
+
+  /* Office scene */
+  --scene-wall: #fce6cf;
+  --scene-wall-stripe: #f8dcc0;
+  --scene-floor: #efcfa2;
+  --scene-floor-line: #e2bb88;
+  --scene-rug: #d3e8d5;
+  --scene-desk-top: #fff1dd;
+  --scene-desk-front: #e9b988;
+  --scene-desk-edge: #d69e6a;
+
+  /* Surfaces around the scene (these flip in dark mode) */
+  --bg: var(--cream);
+  --surface: var(--paper);
+  --surface-2: #fbeee0;
+  --text: var(--ink);
+  --text-soft: var(--ink-soft);
+  --border: var(--line);
+
+  --radius: 18px;
+  --radius-sm: 12px;
+  --shadow-soft: 0 8px 24px rgba(90, 55, 30, 0.1);
+  --shadow-pop: 0 18px 50px rgba(60, 35, 20, 0.22);
+  --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1d1820;
+    --surface: #2a2330;
+    --surface-2: #342b3b;
+    --text: #f7ede2;
+    --text-soft: #bcaaa0;
+    --border: #3f3444;
+    --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.35);
+  }
+}
